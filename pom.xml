@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.yuyunsoft</groupId>
+  <artifactId>yuyunzkclient</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>yuyunzkclient</name>
+  <url>http://maven.apache.org</url>
+  <description>zookeeper三种客户端使用</description>
+  <developers>
+  	<developer>
+  	    <id>1</id>
+  	    <name>黄小云</name>
+  	    <email>1246984049@qq.com</email>
+  	    <roles><role>java架构师</role></roles>
+  	</developer> 
+  </developers>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  
+  
+   <!-- zookeeper原生jar包依赖 begin -->
+   <dependency>
+       <groupId>org.apache.zookeeper</groupId>
+       <artifactId>zookeeper</artifactId>
+       <version>3.4.9</version>
+   </dependency>
+   <!-- zookeeper原生jar包依赖 begin -->
+   
+   <!-- Apache Curator jar包依赖 begin -->
+    <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-framework</artifactId>
+        <version>2.9.0</version>
+    </dependency>
+    <!--  Apache Curator jar包依赖 begin -->
+    
+    <!--  开源的zkClient  jar包依赖 begin -->
+    <dependency>
+        <groupId>com.github.adyliu</groupId>
+        <artifactId>zkclient</artifactId>
+        <version>2.1.1</version>
+    </dependency>
+    <!--  开源的zkClient  jar包依赖 end -->
+
+   </dependencies>
+</project>
